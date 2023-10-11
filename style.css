@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+body{
+    /* height: 100vh; */
+    background-image: linear-gradient(to top, #FFE7D1, #FFF2E5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+#header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#header li{
+    list-style: none;
+}
+#header a{
+    text-decoration: none;
+    color: #000;
+}
+#header .centro{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+/* HEADER FINAL */
+
+/* MAIN */
+/* START */
+main .start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .start .left{
+    margin-left: 10vw;
+}
+main .start .left span{
+    color: #ED4D1B;
+}
+main .start .left h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 50px;
+}
+main .start .left p{
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+main .start .right img{
+    max-width: 60vw;
+}
+/* main .start .left img.trequin{
+    position: absolute;
+    top: 222px;
+    left: 32vw;
+    rotate: 6deg;
+} */
+/* START FINAL */
+
+
+/* CARDS */
+#cards{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#cards .card1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* width: 15vw;
+    height: 20vw; */
+    width: 222px;
+    height: 256px;
+    background-color: #ED4D1B;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #000;
+}
+#cards .card1:not(:first-child){
+    margin-left: 15px;
+}
+#cards .card2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* width: 15vw;
+    height: 20vw; */
+    width: 222px;
+    height: 256px;
+    margin-left: 15px;
+    background-color: #FF9A3C;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #000;
+}
+.voltar{
+    margin-left: 170px;
+    margin-top: 30px;
+}
+#cards img{
+    width: 40px;
+}
+.card2{
+    margin-top: 20px;
+}
+
+/* CARDS FINAL */
+
+/* OUTROS */
+.outros{
+    margin-top: 22vh;
+    text-align: center;
+}
+.outros h1{
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+.outros h1 span{
+    color: #ED4D1B;
+}
+/* OUTROS FINAL */
+/* MAIN FINAL */
+
+/* FOOTER */
+footer{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    padding: 40px;
+    margin-top: 20vh;
+    border-top: 1px solid #000;
+    background-color: #ffe3c7;
+    align-items: center;
+}
+footer li a, footer li{
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+footer .right a.btn1{
+    width: 40%;
+    text-align: center;
+}
+
+footer li:not(:first-child){
+    margin-top: 10px;
+}
+
+footer .right{
+    display: flex;
+    flex-direction: column;
+}
+footer .right input{
+    padding: 10px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    text-decoration: none;
+    outline: none;
+}
+footer .right a{
+    margin-top: 20px;
+    width: 25%;
+}
+/* FOOTER FINAL */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 800px){
+    .start{
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 600px){
+    .start img.fundo{
+        display: none;
+    }
+    #cards .card1:first-child{
+        margin-left: 15px;
+    }
+    .card1{
+        margin-top: 20px;
+    }
+
+    footer a.btn1{
+        width: 70%;
+    }
+}
+
+
+
+
+
+/* PREDEFINIÇÕES */
+.btn1{
+    background-color: #ED4D1B;
+    box-shadow: 4px 4px 0 #000;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    border: 2px solid #000;
+    transition: all .3s ease;
+}
+.btn1 ~ img{
+    margin-top: 8vh;
+    margin-left: -4vw;
+    position: absolute;
+}
+.btn1:hover{
+    box-shadow: none;
+    border-radius: 5px;
+}
