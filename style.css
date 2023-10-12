@@ -31,8 +31,26 @@ body{
     justify-content: space-between;
     gap: 5vw;
 }
-#header .menu{
+#header .navMenu{
     display: none;
+}
+#header #menu2{
+    display: none;
+}
+#header #active{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20vw;
+    text-align: center;
+    background-color: #FF9A3C;
+    padding: 20px;
+    box-shadow: 4px 4px 0 #000;
+    font-weight: bold;
+    overflow: hidden;
+}
+#header #active li:not(:first-child){
+    margin-top: 3vh;
 }
 /* HEADER FINAL */
 
@@ -144,6 +162,7 @@ footer{
     border-top: 1px solid #000;
     background-color: #ffe3c7;
     align-items: center;
+    justify-content: center;
 }
 footer li a, footer li{
     text-decoration: none;
@@ -218,7 +237,7 @@ footer .right a{
     #header .centro, #header a.btn1{
         display: none;
     }
-    #header .menu{
+    #header .navMenu{
         display: block;
         scale: 1.6;
     }
@@ -232,11 +251,15 @@ footer .right a{
     }
 }
 @media (max-width: 600px){
+    main .start .left{
+        margin-left: 0;
+        padding: 20px;
+    }
     .start img.fundo{
         display: none;
     }
-    #cards .card1:first-child{
-        margin-left: 15px;
+    #cards .card1:not(:first-child), #cards .card2{
+        margin-left: 0px;
     }
     .card1{
         margin-top: 20px;
