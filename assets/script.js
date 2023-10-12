@@ -1,3 +1,4 @@
+// ABERTURA E FECHAMENTO DO MENU
 var menu = document.getElementById("menu");
 var menu2 = document.getElementById("menu2");
 var active = document.getElementById("active");
@@ -11,3 +12,5 @@ menu2.addEventListener('click', () => {
     menu.style.display = 'block';
     active.style.display = 'none';
 });
+///////////////////////////////////////////
+
