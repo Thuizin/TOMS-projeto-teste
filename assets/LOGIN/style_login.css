@@ -53,15 +53,44 @@ a.enviar:hover{
     box-shadow: 0px 0px 10px #00ff00;
 }
 
-.user, .senha{
+.user, .senha, .email{
     text-align: left;
     color: white;
 }
-.user p, .senha p{
+.user p, .senha p, .email p{
     margin-bottom: 0px;
     margin-left: 5px;
 }
 
 .senha ~ .enviar{
     margin-left: 10px;
+}
+
+a.esquecer{
+    color: #fff;
+    margin-top: 2vh;
+}
+
+a.login{
+    color: #fff;
+    margin-top: -20px;    
+    margin-bottom: 20px;
+}
+
+.right i{
+    color: #fff;
+    scale: 2;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .right .card{
+        width: 60vw;
+    }
+    .right i{
+        margin-left: 6vw;
+    }
 }
